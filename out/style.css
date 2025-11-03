@@ -1,0 +1,114 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #141414;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: red;
+}
+
+.header nav a {
+  margin-left: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header nav a:hover {
+  color: red;
+}
+
+/* Hero */
+.hero {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("assets/banner.jpg") center/cover no-repeat;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  background: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: darkred;
+}
+
+/* Grid */
+main {
+  padding: 6rem 2rem 2rem;
+}
+
+main h2 {
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #222;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card h3 {
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}

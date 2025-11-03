@@ -1,0 +1,67 @@
+body {
+  background-color: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 80px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.perfil-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.perfil:hover {
+  transform: scale(1.1);
+}
+
+.perfil img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 3px solid #00ffc3;
+}
+
+.perfil span {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.adicionar-perfil {
+  width: 120px;
+  height: 120px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 3rem;
+  border: 2px dashed #666;
+  color: #aaa;
+}
+
+.gerenciar {
+  margin-top: 40px;
+  color: #ccc;
+  background: none;
+  border: 1px solid #444;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}

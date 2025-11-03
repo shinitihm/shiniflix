@@ -1,0 +1,282 @@
+body,
+header {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+header {
+  height: 125px;
+  margin: 0 auto;
+  /* position: fixed; */
+  box-shadow: 10px 1px #06060f;
+}
+body {
+  background-color: #132839;
+}
+.areabotao {
+  text-align: end;
+  padding-right: 20px;
+  display: block;
+  padding-top: 70px;
+}
+.footer {
+  background-color: #0e1b25;
+  color: aliceblue;
+  padding: 40px 20px 20px;
+  margin-top: 50px;
+  font-size: 14px;
+  border-top: 2px solid #82acd0dd;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 200px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.footer-social a img {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+
+.footer-social a:hover img {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+  font-size: 12px;
+}
+
+.germinaflix {
+  background-color: #0e1b25;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 125px;
+  width: 95%;
+}
+
+.images {
+  width: 250px;
+  /* 1x */
+  height: 375px;
+  /* 1.5x */
+  border-radius: 10px;
+  margin: 18px;
+  transition: transform 0.3s;
+}
+
+.legenda {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0px;
+  text-align: center;
+  color: rgb(106, 124, 139);
+}
+.atual {
+  background-color: aliceblue;
+  border-radius: 10px;
+  border: none;
+  padding: 3px;
+}
+.atual:hover {
+  transform: scale(1.01);
+  background-color: rgb(225, 241, 255);
+}
+
+.botao {
+  border-radius: 10px;
+  background-color: #82acd0dd;
+  border: none;
+  padding: 3px;
+}
+.botao:hover {
+  transform: scale(1.01);
+  background-color: aliceblue;
+  transition: 1s;
+}
+.botaofilme {
+  display: inline-block;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+.social {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  transition: transform 0.3s;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.botaofilme:hover img {
+  transition: 100ms;
+  transform: scale(1.12) rotate(0.5deg);
+}
+
+.areabotao {
+  justify-content: space-between;
+}
+#filmes {
+  padding: 62.5px;
+  padding-top: 125px;
+}
+
+.user-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+  color: aliceblue;
+  font-size: 16px;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #82acd0dd;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.nav-button {
+  background: transparent;
+  border: none;
+  color: #ccc;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-button:hover,
+.nav-button:focus,
+.atual {
+  color: white;
+  font-weight: bold;
+  border-bottom: 2px solid #82acd0dd;
+  outline: none;
+}
+
+.user-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: aliceblue;
+  font-size: 16px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #82acd0dd;
+}
+.filme-destaque {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/bladerunnerPOSTER.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.conteudo {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  color: white;
+}
+
+.logo-central-bladerunner {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+.sinopse-box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 1000px;
+}
+
+.poster-filme {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #000;
+}
+
+.sinopse {
+  max-width: 600px;
+  background-color: rgba(14, 27, 37, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
